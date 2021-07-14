@@ -1,11 +1,11 @@
 [package]
-name = "hello_remote_world"
+name = "hello-wasm"
 version = "0.1.0"
-authors = ["VS Code <vscode@microsoft.com>"]
 edition = "2018"
 
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
-path ="./src/lib/lib.rs"
+crate-type = ["cdylib"]
 
 [dependencies]
-rand = "0.8.3"
+wasm-bindgen = "0.2"
